@@ -2,6 +2,15 @@
   "name": "jump-app-bridge",
   "version": "0.1.0",
   "description": "React Native Android library for secure IPC auth context sharing between host and client apps.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrliputo/jump-app-bridge"
+  },
+  "bugs": {
+    "url": "https://github.com/mrliputo/jump-app-bridge/issues"
+  },
+  "homepage": "https://github.com/mrliputo/jump-app-bridge",
+  "author": "mrliputo",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "react-native": "src/index.ts",
@@ -14,8 +23,7 @@
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "clean": "rimraf dist",
-    "lint": "eslint .",
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\"",
     "prepare": "npm run build"
   },
   "keywords": [
@@ -36,5 +44,8 @@
     "@types/react-native": "^0.73.0",
     "@types/node": "^20.11.19",
     "typescript": "^5.4.5"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

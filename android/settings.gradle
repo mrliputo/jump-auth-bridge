@@ -1,0 +1,4 @@
+rootProject.name = 'jump-auth-bridge-android'
+include ':jump-auth-bridge'
+project(':jump-auth-bridge').projectDir = new File(rootProject.projectDir, '.')
+

@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+# Minimal placeholder. Use your Android project's Gradle wrapper when consuming.
+echo "Please run Gradle from a React Native app project (android/gradlew) that consumes this library."
+exit 1
+

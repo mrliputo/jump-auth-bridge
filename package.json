@@ -1,0 +1,40 @@
+{
+  "name": "@btpns/jump-auth-bridge",
+  "version": "0.1.0",
+  "description": "React Native Android library for secure IPC auth context sharing between host and client apps.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "react-native": "src/index.ts",
+  "files": [
+    "android/",
+    "src/",
+    "dist/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "lint": "eslint .",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react-native",
+    "android",
+    "aidl",
+    "ipc",
+    "auth",
+    "token"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "^0.73.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-native": "^0.73.0",
+    "@types/node": "^20.11.19",
+    "typescript": "^5.4.5"
+  }
+}

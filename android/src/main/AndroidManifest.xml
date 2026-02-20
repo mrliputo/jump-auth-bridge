@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--
+    Library module doesn't declare the host Service.
+    Host app (com.btpns.acquisition) must declare:
+      - signature permission
+      - exported bound Service implementing IJumpAuthService
+  -->
+</manifest>
+
